@@ -1,0 +1,26 @@
+package com.example.simplechat.response
+
+sealed class CustomException {
+    object SomethingWentWrong : CustomException()
+    object BusinessDetailsUpdatedSuccessfully : CustomException()
+    object NetworkError : CustomException()
+    object Timeout : CustomException()
+    object EmailEmpty : CustomException()
+    object PasswordEmpty : CustomException()
+    object ServerBusy : CustomException()
+    object InputEmptyError : CustomException()
+    object HttpException : CustomException()
+    object SocketTimeOutException : CustomException()
+    object NoInternet : CustomException()
+    object Unauthorized : CustomException()
+    object InternalServerError : CustomException()
+    object BadRequest : CustomException()
+    object Conflict : CustomException()
+    object NotFound : CustomException()
+    object NotAcceptable : CustomException()
+    object ServiceUnavailable : CustomException()
+    object Forbidden : CustomException()
+    object LoginSuccessful : CustomException()
+    object MakeAndYearSelect : CustomException()
+    object NoModelFound : CustomException()
+}
